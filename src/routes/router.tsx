@@ -10,6 +10,7 @@ import Login from '@/pages/login';
 import MyPage from '@/pages/mypage';
 import MyPageReservation from '@/pages/mypage/mypageReservation';
 import MyPageReservationDetail from '@/pages/mypage/mypageReservationDetail';
+import Onboarding from '@/pages/onboarding';
 import Reservation from '@/pages/reservation';
 import Search from '@/pages/search';
 import { ROUTES_CONFIG } from './routesConfig';
@@ -22,6 +23,10 @@ export const router = createBrowserRouter([
   {
     path: ROUTES_CONFIG.login.path,
     element: <Login />,
+  },
+  {
+    path: ROUTES_CONFIG.onboarding.path,
+    element: <Onboarding />,
   },
   {
     path: ROUTES_CONFIG.search.path,
